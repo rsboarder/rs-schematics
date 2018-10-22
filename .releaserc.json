@@ -1,0 +1,27 @@
+{
+  "noCi": true,
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/git"
+  ],
+  "prepare": [
+    "@semantic-release/changelog"
+  ],
+  "publish": [
+    {
+      "path": "@semantic-release/github",
+      "assets": [
+        "./src/*",
+        ".editorconfig",
+        ".gitignore",
+        ".npmignore",
+        ".releaserc.json",
+        "CHANGELOG.md",
+        "package.json",
+        "README.md",
+        "tsconfig.json",
+        "yarn.lock"
+      ]
+    }
+  ]
+}

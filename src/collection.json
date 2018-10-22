@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "component": {
+      "aliases": ["c"],
+      "description": "A blank component with pug template.",
+      "factory": "./component",
+      "schema": "./component/schema.json"
+    }
+  }
+}
