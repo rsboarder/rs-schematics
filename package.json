@@ -1,0 +1,37 @@
+{
+  "name": "rs-schematics",
+  "version": "0.0.0",
+  "description": "Personal Angular schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "release": "npm run test && ./node_modules/.bin/semantic-release"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.8.4",
+    "@angular-devkit/schematics": "^0.8.4",
+    "@angular/cli": "^6.2.4",
+    "@angular/core": "^6.1.10",
+    "@schematics/angular": "^0.8.4",
+    "@semantic-release/github": "^5.2.0",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^2.8.0",
+    "typescript": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsboarder/rs-schematics.git"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/git": "^7.0.4",
+    "semantic-release": "^15.9.17"
+  }
+}
